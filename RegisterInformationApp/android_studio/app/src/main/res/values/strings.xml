@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="pergunta_1">Nos últimos 10 dias você recebeu o diagnóstico positivo de COVID-19?</string>
+    <string name="pergunta_2">Você teve contato com alguma pessoa com diagnóstico positivo de COVID-19 nos últimos 10 dias?</string>
+    <string name="pergunta_3">Você apresenta neste momento dois ou mais sintomas listados da seguir? (verificar os sintomas no aplicativo PUC Mobile)</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+</resources>
