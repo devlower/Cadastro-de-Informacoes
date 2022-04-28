@@ -8,18 +8,18 @@ public class Contatodb {
 
     ContatoDao contatoDao;
 
-    Contatodb(ContatoDao contatoDao) {
+    public Contatodb(ContatoDao contatoDao) {
         this.contatoDao = contatoDao;
     }
 
-    void delete(Contato contato) {
+    public void delete(Contato contato) {
         contatoDao.delete(contato);
     }
 
-    List<Contato> getAll() {
+    public List<Contato> getAll() {
         return contatoDao.getAll();
     }
-    void addContact(Contato contato) {
+    public void addContact(Contato contato) {
         contatoDao.addContact(contato);
     }
 }

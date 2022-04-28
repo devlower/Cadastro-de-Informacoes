@@ -6,13 +6,13 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Contato {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int uid;
 
     @ColumnInfo(name = "name")
     public String name;
     @ColumnInfo(name = "age")
-    public Integer age;
+    public String age;
     @ColumnInfo(name = "email")
     public String email;
     @ColumnInfo(name = "cpf")
@@ -20,11 +20,23 @@ public class Contato {
     @ColumnInfo(name = "phone")
     public String phone;
 
-    public Contato(String name, Integer age, String email, String cpf, String phone) {
+    public Contato(String name, String age, String email, String cpf, String phone) {
         this.age = age;
         this.cpf = cpf;
         this.email = email;
         this.name = name;
         this.phone = phone;
+    }
+
+    @Override
+    public String toString() {
+        return "Contato{" +
+                "uid=" + uid +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
